@@ -108,25 +108,20 @@ https://templatemo.com/tm-582-tale-seo-agency
           </nav>
         </div>
       </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-
-  <div class="main-banner" id="top">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="caption header-text">
-            <h6>MECÁNICA GENERAL · NOGALES, SONORA</h6>
-            <div class="line-dec"></div>
-            <h4>Tu auto en <em>las mejores</em> manos</h4>
-            <p>Diagnóstico, mantenimiento y reparación con años de experiencia. Tu vehículo se encuentra en buenas manos.</p>
-            <div class="main-button scroll-to-section"><a href="#projects">Ver nuestros trabajos</a></div>
-          </div>
+      <!-- Mobile lang switch row -->
+      <div class="row mobile-lang-row">
+        <div class="col-12">
+          <span class="lang-es">ES</span>
+          <label class="lang-toggle-switch">
+            <input type="checkbox" id="lang-toggle-mobile">
+            <span class="lang-toggle-slider"></span>
+          </label>
+          <span class="lang-en">EN</span>
         </div>
       </div>
     </div>
-  </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
 
   <div class="services section" id="services">
     <div class="container">
@@ -191,6 +186,22 @@ https://templatemo.com/tm-582-tale-seo-agency
           <div class="service-item" data-slide="8">
             <div class="service-icon"><i class="fas fa-circle-notch"></i></div>
             <h4>Clutch</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="caption header-text">
+            <h6>MECÁNICA GENERAL · NOGALES, SONORA</h6>
+            <div class="line-dec"></div>
+            <h4>Tu auto en <em>las mejores</em> manos</h4>
+            <p>Diagnóstico, mantenimiento y reparación con años de experiencia. Tu vehículo se encuentra en buenas manos.</p>
+            <div class="main-button scroll-to-section"><a href="#projects">Ver nuestros trabajos</a></div>
           </div>
         </div>
       </div>
@@ -374,7 +385,7 @@ https://templatemo.com/tm-582-tale-seo-agency
 
   <!-- Language switch: ES is active, toggling to EN goes to /en/ -->
   <script>
-    document.querySelectorAll('#lang-toggle, #lang-toggle-nav').forEach(function(toggle) {
+    document.querySelectorAll('#lang-toggle, #lang-toggle-nav, #lang-toggle-mobile').forEach(function(toggle) {
       toggle.addEventListener('change', function() {
         if (this.checked) {
           window.location.href = 'en/index.html';

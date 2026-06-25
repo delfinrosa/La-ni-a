@@ -2169,13 +2169,53 @@ Nav centrado + lang switch en nav
 
 @media (max-width: 767px) {
   .lang-switch-nav {
+    display: none;
+  }
+}
+
+.mobile-lang-row {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-lang-row {
     display: flex;
-    position: absolute;
-    right: 65px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: auto;
-    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0 10px 0;
+    border-top: 1px solid rgba(0, 122, 255, 0.2);
+  }
+
+  .mobile-lang-row .col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .mobile-lang-row .lang-es,
+  .mobile-lang-row .lang-en {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .mobile-lang-row .lang-es {
+    color: #fff;
+  }
+
+  .header-area {
+    height: auto !important;
+  }
+
+  .services.section {
+    margin-top: 120px !important;
+    padding-top: 5px !important;
+  }
+
+  .main-banner {
+    margin-top: 0;
   }
 }
 

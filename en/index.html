@@ -101,6 +101,17 @@
           </nav>
         </div>
       </div>
+      <!-- Mobile lang switch row -->
+      <div class="row mobile-lang-row">
+        <div class="col-12">
+          <span class="lang-es">ES</span>
+          <label class="lang-toggle-switch">
+            <input type="checkbox" id="lang-toggle-mobile" checked>
+            <span class="lang-toggle-slider"></span>
+          </label>
+          <span class="lang-en">EN</span>
+        </div>
+      </div>
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
@@ -364,7 +375,7 @@
 
   <!-- Language switch: EN is active, toggling to ES goes to root index -->
   <script>
-    document.querySelectorAll('#lang-toggle, #lang-toggle-nav').forEach(function(toggle) {
+    document.querySelectorAll('#lang-toggle, #lang-toggle-nav, #lang-toggle-mobile').forEach(function(toggle) {
       toggle.addEventListener('change', function() {
         if (!this.checked) {
           window.location.href = '../index.html';
