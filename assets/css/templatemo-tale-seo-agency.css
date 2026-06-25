@@ -2169,7 +2169,13 @@ Nav centrado + lang switch en nav
 
 @media (max-width: 767px) {
   .lang-switch-nav {
-    display: none;
+    display: flex;
+    position: absolute;
+    right: 65px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    margin-left: 0;
   }
 }
 
