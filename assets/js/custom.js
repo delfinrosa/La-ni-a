@@ -296,4 +296,14 @@
 	
 
 
+	// Clic en servicio → scroll al carrusel y navega al slide correspondiente
+	$(document).on('click', '.service-item[data-slide]', function () {
+		var slideIndex = parseInt($(this).data('slide'));
+		$('html, body').animate({
+			scrollTop: $('#projects').offset().top - 80
+		}, 500, function () {
+			$('.owl-features').trigger('to.owl.carousel', [slideIndex, 400, true]);
+		});
+	});
+
 })(window.jQuery);
