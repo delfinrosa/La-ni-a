@@ -2168,7 +2168,7 @@ Floating Contact Buttons
 .floating-contact {
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 38%;
   transform: translateY(-50%);
   z-index: 9998;
   display: flex;
